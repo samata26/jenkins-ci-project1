@@ -13,5 +13,12 @@ pipeline {
                 bat 'mvn clean package'
             }
         }
-    }
+    
+    stage('Test') {
+        steps {
+            echo 'unit tetsing'
+            // sh 'mvn test'
+        }
+        
+        }        
 }
